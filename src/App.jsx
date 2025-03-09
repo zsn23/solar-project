@@ -5,7 +5,7 @@ import './App.css'
 import { Routes, Route  } from 'react-router-dom';
 // Pages
 import Home from './Pages/Home'
-import AboutUS from './Pages/AboutUS';
+import AboutUS from './Pages/AboutUs';
 import ContactUs from './Pages/ContactUs';
 // Components
 import Header_ from "./Components/Header_"
