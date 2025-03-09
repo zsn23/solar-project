@@ -27,6 +27,8 @@
 .nav {
   display: flex;
   gap: 20px;
+  white-space: nowrap !important;
+  flex-wrap: nowrap !important;
 }
 
 .nav-link {
@@ -72,9 +74,9 @@
 .dropdown-content {
   display: block;
   position: absolute;
-  background-color: #e7ecf1;
+  background-color: #F3F2EE;
   min-width: 160px;
-  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 0px 10px rgba(255, 157, 0, 0.1) !important;
   z-index: 1;
   opacity: 0;
   visibility: hidden;
@@ -348,8 +350,8 @@
 
 .CustomcardCategory {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  height: 85%;
   /* background: radial-gradient(circle, #000000, #777777, #FFFFFF); */
   /* background: radial-gradient(circle, #fffafa, #FF8C00); */
   /* background: radial-gradient(circle, #fffafa, #FFDE32  ); */
@@ -391,8 +393,7 @@
 }
 
 .headingCustomcardCategory {
-  font-size: 28px;
-  text-transform: capitalize;
+  font-size: 19px;
   font-weight: 900;
 }
 
@@ -423,8 +424,8 @@
 
 /* From Uiverse.io by alexruix */ 
 .Customcard {
-  width: 90%;
-  height: 100%;
+  width: 85%;
+  height: 90%;
   padding: .8em;
   background: #faf6e7;
   /* background: radial-gradient(circle,  #faf6e7, #FFDE32); */
@@ -502,3 +503,31 @@
   background: radial-gradient(circle,  #fffafa, #ffffff);
  }
  
+
+ /* All buttons */
+ .btn:hover{
+  background: linear-gradient(190deg, #FF8C00,  #FFDE32) !important;
+  color: #000 !important;
+ }
+ .btn-dark{
+  background: linear-gradient(190deg, #FF8C00,  #FFDE32) !important;
+  color: #000 !important;
+  border: none !important;
+ }
+ .btn-dark:hover{
+  border: 1px solid black !important;
+ }
+ .btnFw{
+  font-weight: 900 !important;
+ }
+
+
+
+
+
+ /* -----------------ABout page------------ */
+
+.bgcolor{
+  background-color: none !important;
+}
+

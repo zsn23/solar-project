@@ -13,7 +13,7 @@ import { useState } from 'react'
 
 const Header_ = () => {
   const [productDropdown,setproductDropdown]=useState(false);
-  // const [servicedropdown,setservicedropdown]=useState(false);
+  const [servicedropdown,setservicedropdown]=useState(false);
   return (
     <>
 
@@ -56,7 +56,7 @@ const Header_ = () => {
 
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-white">
-        <div className="container headerContainer ">
+        <div className="container-fluid headerContainer ">
           {/* Hamburger Icon (Stick to Left) */}
           <div className="d-flex align-items-center ">
             <button
@@ -124,7 +124,7 @@ const Header_ = () => {
                     </div>
                   )}
                 </li>
-                {/* <li className="nav-item dropdown"
+                <li className="nav-item dropdown"
                   onMouseEnter={()=>setservicedropdown(true)}
                   onMouseLeave={()=>setservicedropdown(false)}
                 >
@@ -138,7 +138,7 @@ const Header_ = () => {
                       <Link to="/services/inverters">Maintainance</Link>
                     </div>
                   )}
-                </li> */}
+                </li>
 
 
                 <li className="nav-item">

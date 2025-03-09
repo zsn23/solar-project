@@ -63,7 +63,7 @@ import productSolar from '../assets/solar-panel-card.svg';
 const ProductCategory = () => {
     // Product categories with unique title and image
     const categories = [
-        { title: "Solar panel", image: productSolar },
+        { title: "Solar Panel", image: productSolar },
         { title: "Inverter", image: productSolar },
         { title: "Batteries", image: productSolar },
         { title: "Solar Accesories", image: productSolar }
@@ -82,10 +82,10 @@ const ProductCategory = () => {
             {/* Row for Product Categories */}
             <div className="row g-4 justify-content-center p-4 align-items-center">
                 {categories.map((category, index) => (
-                    <div key={index} className="col-lg-3 col-md-4 col-sm-7  d-flex justify-content-center align-items-center">
-                        <div className="CustomcardCategory text-center">
+                    <div key={index} className="col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                        <div className="CustomcardCategory ">
                             <img src={category.image} alt={category.title} className="category-image" />
-                            <div className="headingCustomcardCategory m-2">
+                            <div className="headingCustomcardCategory">
                                 {category.title}
                             </div>
                         </div>

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
-import cartLogo from "../assets/cart.svg";
-import p1 from "../assets/p1.png";
+import cartLogo from "../../assets/cart.svg";
+import p1 from "../../assets/p1.png";
+// import ProductDetails from "./BatteryProductDetails";
+// import { useState } from "react";
 
 const Solarproducts = [
   {
@@ -8,16 +10,16 @@ const Solarproducts = [
     title: "Haier T-Door HRF-678TGG Side By Side Refrigerator",
     price: "Rs355,000",
     image: p1,
-    descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+    descrition: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    features: ["Energy efficient", "Smart temperature control", "Spacious storage"],
   },
   {
     id: 2,
     title: "PEL Life Pro Refrigerator PRLP 6360",
     price: "Rs129,999",
     image: p1,
-    descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+    descrition: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    features: ["Fast cooling", "Elegant design", "Long-lasting durability"],
   },
   {
     id: 3,
@@ -25,8 +27,8 @@ const Solarproducts = [
     price: "Rs126,999",
     originalPrice: "Rs145,000",
     image: p1,
-    descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+    descrition: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    features: [],
   },
   {
     id: 4,
@@ -34,8 +36,8 @@ const Solarproducts = [
     price: "Rs71,000",
     originalPrice: "Rs79,000",
     image: p1,
-    descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+    descrition: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    features: [],
   },
 ];
 
@@ -46,7 +48,7 @@ const Invertorproducts = [
     price: "Rs355,000",
     image: p1,
     descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 2,
@@ -54,7 +56,7 @@ const Invertorproducts = [
     price: "Rs129,999",
     image: p1,
     descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 3,
@@ -63,7 +65,7 @@ const Invertorproducts = [
     originalPrice: "Rs145,000",
     image: p1,
     descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 4,
@@ -72,7 +74,7 @@ const Invertorproducts = [
     originalPrice: "Rs79,000",
     image: p1,
     descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
 ];
 
@@ -83,7 +85,7 @@ const Batteriesproducts = [
     price: "Rs355,000",
     image: p1,
     descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 2,
@@ -91,7 +93,7 @@ const Batteriesproducts = [
     price: "Rs129,999",
     image: p1,
     descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 3,
@@ -100,7 +102,7 @@ const Batteriesproducts = [
     originalPrice: "Rs145,000",
     image: p1,
     descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 4,
@@ -109,7 +111,7 @@ const Batteriesproducts = [
     originalPrice: "Rs79,000",
     image: p1,
     descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
 ];
 
@@ -120,7 +122,7 @@ const productsAccesories = [
     price: "Rs355,000",
     image: p1,
     descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 2,
@@ -128,7 +130,7 @@ const productsAccesories = [
     price: "Rs129,999",
     image: p1,
     descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 3,
@@ -137,7 +139,7 @@ const productsAccesories = [
     originalPrice: "Rs145,000",
     image: p1,
     descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 4,
@@ -146,7 +148,7 @@ const productsAccesories = [
     originalPrice: "Rs79,000",
     image: p1,
     descrition:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique ante eget leo varius facilisis. Integer risus risus, convallis dignissim accumsan in",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
 ];
 
@@ -164,7 +166,7 @@ const Products = () => {
       {/* Solar Panel PRODUCT Heading */}
       <div className="row g-0 ">
         <div className="col-12 text-md-start text-center p-3 ">
-          <h1 className="display-6 fw-bold">Solar Panel</h1>
+          <h1 className="display-6 fw-semibold fs-2">Solar Panel</h1>
         </div>
       </div>
       {/* Solar Panel PRODUCT Heading */}
@@ -173,9 +175,9 @@ const Products = () => {
         {Solarproducts.map((Solarproducts) => (
           <div
             key={Solarproducts.id}
-            className="col-lg-3 col-md-4 col-sm-6 mb-4 p-0 d-flex justify-content-center align-items-center"
+            className="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 p-0 d-flex justify-content-center align-items-center"
           >
-            <div className="Customcard  d-flex flex-column">
+            <Link to={`/product/${Solarproducts.id}`} className="Customcard  d-flex flex-column text-decoration-none text-dark">
               {/*Solarproducts img  */}
               <div className="Customcard-img d-flex justify-content-center">
                 {/* Product Image */}
@@ -215,12 +217,13 @@ const Products = () => {
                 </div>
                 {/* Solarproducts Price  & Cart icon */}
               </div>
-            </div>
+            
+            </Link>
           </div>
         ))}
         <div className="d-flex justify-content-center align-items-center p-3 m-3 border-bottom">
           <Link className="text-decoration-none d-flex">
-            <button className="btn btn-transparent btn-outline-dark btn-md fw-bolder rounded-pill d-flex align-items-center justify-content-center">
+            <button className="btn btn-transparent btn-outline-dark btn-md btnFw rounded-pill d-flex align-items-center justify-content-center">
               SEE MORE SOLAR PANELS
             </button>
           </Link>
@@ -228,10 +231,11 @@ const Products = () => {
       </div>
       {/*Solarproducts Product Cards */}
 
+
       {/* Solar Invertor PRODUCT Heading */}
       <div className="row g-0 ">
         <div className="col-12 text-md-start text-center p-3">
-          <h1 className="display-6 fw-bold">Solar Invertor</h1>
+          <h1 className="display-6 fw-semibold fs-2">Solar Invertor</h1>
         </div>
       </div>
       {/* Solar Invertor PRODUCT Heading */}
@@ -240,7 +244,7 @@ const Products = () => {
         {Invertorproducts.map((Invertorproducts) => (
           <div
             key={Invertorproducts.id}
-            className="col-lg-3 col-md-4 col-sm-6 mb-4 p-0 d-flex justify-content-center align-items-center"
+            className="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 p-0 d-flex justify-content-center align-items-center"
           >
             <div className="Customcard  d-flex flex-column">
               {/*Invertorproducts img  */}
@@ -282,7 +286,7 @@ const Products = () => {
         ))}
         <div className="d-flex justify-content-center align-items-center p-3 m-3 border-bottom">
           <Link className="text-decoration-none d-flex">
-            <button className="btn btn-transparent btn-outline-dark btn-md fw-bolder rounded-pill d-flex align-items-center justify-content-center">
+            <button className="btn btn-transparent btn-outline-dark btn-md btnFw rounded-pill d-flex align-items-center justify-content-center">
               SEE MORE INVERTOR
             </button>
           </Link>
@@ -290,73 +294,76 @@ const Products = () => {
       </div>
       {/*Invertorproducts  Cards */}
 
-      {/* Solar Batteries PRODUCT Heading */}
-      <div className="row g-0 ">
-        <div className="col-12 text-md-start text-center p-3 ">
-          <h1 className="display-6 fw-bold">Batteries</h1>
-        </div>
-      </div>
-      {/* Solar Batteries PRODUCT Heading */}
       {/* Batteriesproducts Cards */}
-      <div className="row  justify-content-center">
-        {Batteriesproducts.map((Batteriesproducts) => (
-          <div
-            key={Batteriesproducts.id}
-            className="col-lg-3 col-md-4 col-sm-6 mb-4 p-0 d-flex justify-content-center align-items-center"
-          >
-            <div className="Customcard  d-flex flex-column">
-              {/*Batteriesproducts img  */}
-              <div className="Customcard-img d-flex justify-content-center">
-                {/* Batteriesproducts Image */}
-                <img
-                  src={Batteriesproducts.image}
-                  alt={Batteriesproducts.title}
-                  className="Customcard-img-top"
-                />
-              </div>
-              {/*Batteriesproducts img  */}
+      <div className="container-fluid">
+        {/* Solar Batteries PRODUCT Heading */}
+        <div className="row g-0 ">
+          <div className="col-12 text-md-start text-center p-3 ">
+            <h1 className="display-6 fw-semibold fs-2">Batteries</h1>
+          </div>
+        </div>
+        {/* Solar Batteries PRODUCT Heading */}
+        <div className="row  justify-content-center">
+          {Batteriesproducts.map((Batteriesproducts) => (
+            <div
+              key={Batteriesproducts.id}
+              className="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 p-0 d-flex justify-content-center align-items-center"
 
-              <div className="d-flex justify-content-between flex-column h-100">
-                {/*Batteriesproducts title & description  */}
-                <div className="Customcard-info d-flex flex-column justify-content-center align-items-center">
-                  <span className="Customtext-title d-flex flex-nowrap">
-                    {Batteriesproducts.title}{" "}
-                  </span>
-                  <span className="Customtext-body">
-                    {Batteriesproducts.descrition}
-                  </span>
+            >
+              <div className="Customcard  d-flex flex-column">
+                {/*Batteriesproducts img  */}
+                <div className="Customcard-img d-flex justify-content-center">
+                  {/* Batteriesproducts Image */}
+                  <img
+                    src={Batteriesproducts.image}
+                    alt={Batteriesproducts.title}
+                    className="Customcard-img-top"
+                  />
                 </div>
-                {/*Batteriesproducts title & description  */}
+                {/*Batteriesproducts img  */}
 
-                {/*Batteriesproducts Price  & Cart icon */}
-                <div className="Customcard-footer border-top border-dark">
-                  <span className="Customtext-title">
-                    {Batteriesproducts.price}
-                  </span>
-                  <div className="Customcard-button">
-                    <img src={cartLogo} alt="cartIcon" className=" Customsvg" />
+                <div className="d-flex justify-content-between flex-column h-100">
+                  {/*Batteriesproducts title & description  */}
+                  <div className="Customcard-info d-flex flex-column justify-content-center align-items-center">
+                    <span className="Customtext-title d-flex flex-nowrap">
+                      {Batteriesproducts.title}{" "}
+                    </span>
+                    <span className="Customtext-body">
+                      {Batteriesproducts.descrition}
+                    </span>
                   </div>
+                  {/*Batteriesproducts title & description  */}
+
+                  {/*Batteriesproducts Price  & Cart icon */}
+                  <div className="Customcard-footer border-top border-dark">
+                    <span className="Customtext-title">
+                      {Batteriesproducts.price}
+                    </span>
+                    <div className="Customcard-button">
+                      <img src={cartLogo} alt="cartIcon" className=" Customsvg" />
+                    </div>
+                  </div>
+                  {/* Batteriesproducts Price  & Cart icon */}
                 </div>
-                {/* Batteriesproducts Price  & Cart icon */}
               </div>
             </div>
+          ))}
+          <div className="d-flex justify-content-center align-items-center p-3 m-3 border-bottom">
+            <Link className="text-decoration-none d-flex">
+              <button className="btn btn-transparent btn-outline-dark btn-md btnFw rounded-pill d-flex align-items-center justify-content-center">
+                SEE MORE BATTERIES
+              </button>
+            </Link>
           </div>
-        ))}
-        <div className="d-flex justify-content-center align-items-center p-3 m-3 border-bottom">
-          <Link className="text-decoration-none d-flex">
-            <button className="btn btn-transparent btn-outline-dark btn-md fw-bolder rounded-pill d-flex align-items-center justify-content-center">
-              SEE MORE BATTERIES
-            </button>
-          </Link>
         </div>
+
       </div>
       {/*Batteriesproducts  Cards */}
-
 
       {/* Solar Accesories PRODUCT Heading */}
       <div className="row g-0 ">
         <div className="col-12 text-md-start text-center p-3 ">
-          <h1 className="display-6 fw-bold">Accesories</h1>
+          <h1 className="display-6 fw-semibold fs-2">Accesories</h1>
         </div>
       </div>
       {/* Solar Accesories PRODUCT Heading */}
@@ -365,7 +372,7 @@ const Products = () => {
         {productsAccesories.map((productsAccesories) => (
           <div
             key={productsAccesories.id}
-            className="col-lg-3 col-md-4 col-sm-6 mb-4 p-0 d-flex justify-content-center align-items-center"
+            className="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 p-0 d-flex justify-content-center align-items-center"
           >
             <div className="Customcard  d-flex flex-column">
               {/*productsAccesories img  */}
@@ -407,15 +414,19 @@ const Products = () => {
         ))}
         <div className="d-flex justify-content-center align-items-center m-3">
           <Link className="text-decoration-none d-flex">
-            <button className="btn btn-transparent btn-outline-dark btn-md fw-bolder rounded-pill d-flex align-items-center justify-content-center">
+            <button className="btn btn-transparent btn-outline-dark btn-md btnFw rounded-pill d-flex align-items-center justify-content-center">
               SEE MORE ACCESORIES
             </button>
           </Link>
         </div>
       </div>
       {/*productsAccesories  Cards */}
+
     </div>
   );
 };
 
 export default Products;
+
+
+
