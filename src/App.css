@@ -1,0 +1,504 @@
+/* -----Yellow Strip------------ */
+.CustomColor {
+  background: linear-gradient(190deg, #FF8C00,  #FFDE32);
+  /* background: linear-gradient(190deg, #FF8C00 30%, #FFDE32 50%, #FF8C00 70%); */
+  /* background: radial-gradient(circle, #FFD32B 40%, #FF8C00 60%); */
+}
+
+.headphonelogo {
+  width: 50px;
+  height: auto;
+}
+
+.callHeading {
+  /* font-family: sans-serif; */
+  font-size: 20px;
+  font-weight: bolder !important;
+}
+
+
+/* -----------------navbar and nav items----------------- */
+.headerLogo {
+
+  width: 180px;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  font-size: 20px !important;
+  text-decoration: none;
+  color: #000000 !important;
+  font-weight: bolder !important;
+  position: relative;
+  transition: color 0.3s ease-in-out !important;
+  display: inline-block;
+  /* Add this to constrain the width to the text */
+}
+
+/* Underline effect for both active and hover */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  /* Start with 0% width */
+  height: 3px;
+  background: linear-gradient(190deg, #FF8C00,  #FFDE32);
+
+  bottom: 0;
+  left: 0;
+  /* Align to the left of the text */
+  transition: width 0.3s ease-in-out;
+}
+
+/* Show underline on hover */
+.nav-link:hover::after {
+  width: 100%;
+  /* Expand to 100% of the text width */
+}
+
+/* Show underline on active route */
+.nav-link.active::after {
+  width: 100%;
+  /* Expand to 100% of the text width */
+}
+
+
+/* ---------dropdown--------- */
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #e7ecf1;
+  min-width: 160px;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  /* Start position above */
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+  /* Adjusted transform timing */
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  /* Move dropdown to its normal position */
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+
+}
+
+/* Caret styling */
+.caret {
+  font-size: 12px;
+  margin-left: 5px;
+  display: inline-block;
+  transition: transform 0.5s ease;
+  /* Adjusted to make it faster */
+}
+
+.dropdown:hover .caret {
+  transform: rotate(180deg);
+  /* Rotate the caret on hover */
+}
+
+@media (max-width: 477px) {
+  .carousel-control-prev-icon {
+    width: 1rem !important;
+  }
+
+  .carousel-control-next-icon {
+    width: 1rem !important;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 20px !important;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .headerLogo {
+    width: 150px !important;
+  }
+
+  .Searchinput {
+    height: 30px !important;
+  }
+
+  .btn-trasparent{
+    height: 30px !important;
+  }
+
+  .CartSizeInsmallScreens {
+    width: 25px !important;
+  }
+}
+
+/* ----------Offfcanvas and hamburger----------------- */
+
+.offcanvas-title {
+  color: #000 !important;
+  font-weight: bolder !important;
+}
+
+.offcanvas-header {
+  background: linear-gradient(45deg, #FFDE32,    #FF8C00);
+
+}
+
+
+.nav-item .nav-link {
+  width: fit-content !important;
+}
+
+
+@media (max-width: 991px) {
+  .offcanvas-body {
+    background-color: #F7F7F7 !important;
+  }
+}
+
+/* Premium Hamburger Icon Styling */
+.custom-toggler {
+  border: none;
+  /* Remove default border */
+  padding: 0.5rem;
+  outline: none !important;
+  /* Remove focus outline */
+  box-shadow: none !important;
+  /* Remove focus box shadow */
+  border: none !important;
+  /* Remove border */
+}
+
+.custom-close-btn {
+  border: none;
+  /* Remove default border */
+  padding: 0.5rem;
+  outline: none !important;
+  /* Remove focus outline */
+  box-shadow: none !important;
+  /* Remove focus box shadow */
+  border: none !important;
+  /* Remove border */
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.custom-toggler .navbar-toggler-icon::before,
+.custom-toggler .navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-toggler .navbar-toggler-icon::before {
+  top: 0;
+}
+
+.custom-toggler .navbar-toggler-icon::after {
+  bottom: 0;
+}
+
+/* Offcanvas Custom Styling */
+.offcanvas {
+  width: 250px;
+  /* Set width of the offcanvas */
+}
+
+.offcanvas-start {
+  left: 0;
+  /* Ensure offcanvas slides in from the left */
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid #ddd;
+  /* Add a border below the header */
+}
+
+.offcanvas-body {
+  padding: 1rem;
+}
+
+
+@media (max-width: 517px) {
+  .headerContainer {
+    justify-content: space-evenly !important;
+  }
+
+}
+
+
+/* ------------Input search-------------  */
+.custom-group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+}
+
+.Searchinput {
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  width: 100% !important;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  outline: none;
+  background: linear-gradient(190deg, #FFDE32,   #FF8C00);
+
+  color: #0d0c22;
+  box-shadow: 0 0 5px #000000, 0 0 0 1px #000000;
+  transition: .3s ease;
+}
+
+.Searchinput::placeholder {
+  color: #000000;
+
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #000000;
+  width: 1rem;
+  height: 1rem;
+}
+
+
+/* -----------Carousal------------ */
+@media (max-width: 576px) {
+  .carousel-control-prev-icon {
+    width: 1rem !important;
+  }
+
+  .carousel-control-next-icon {
+    width: 1rem !important;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 20px !important;
+  }
+}
+
+/* ---------------AnnouncementBar----------------- */
+.announcement-bar {
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  /* padding: 10px 0; */
+  padding-top: 5px 0 5px 0;
+}
+
+.logo-container {
+  display: flex;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+}
+
+.logo-container.paused {
+  animation-play-state: paused;
+}
+
+.logo {
+ 
+  height: 80px;
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0); /* Move half width to create infinite loop */
+  }
+}
+
+
+/* -----------Our Product Section----------- */
+
+.CustomcardCategory {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background: radial-gradient(circle, #000000, #777777, #FFFFFF); */
+  /* background: radial-gradient(circle, #fffafa, #FF8C00); */
+  /* background: radial-gradient(circle, #fffafa, #FFDE32  ); */
+  background: linear-gradient(190deg, #FF8C00,  #FFDE32);
+  /* background: linear-gradient(270deg, #ffffff, #FF8C00) !important; */
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 14px;
+  gap: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.CustomcardCategory::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: 0;
+  margin: auto;
+  /* width: 190px;
+  height: 260px; */
+  border-radius: 15px;
+  /* background: linear-gradient(190deg, #000000,  #000000); */
+  background: linear-gradient(190deg, #333, #555);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.8s cubic-bezier(0.175, 0.95, 0.9, 1.275);
+  box-shadow: 0px 10px 20px hsla(0, 0%, 0%, 0.3);
+}
+
+.CustomcardCategory::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  transform: translate3d(0, 0, 0) scale(0.45);
+}
+
+.headingCustomcardCategory {
+  font-size: 28px;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+.CustomcardCategory p:not(.headingCustomcardCategory) {
+  font-size: 18px;
+}
+
+.CustomcardCategory p:last-child {
+  color:#FF8C00 ;
+  font-weight: 900;
+}
+
+.CustomcardCategory:hover::after {
+  transition: all 0.2s cubic-bezier(0.175, 0.285, 0.82, 1.275);
+}
+
+.CustomcardCategory:hover::before {
+  transform: scaleX(1.01) scaleY(1.01);
+  box-shadow: 0px 0px 20px 0px #000000;
+}
+.category-image {
+  width: 100%;  /* Ensures it fills the container */
+  height: 100%;  /* Fixed height for consistency */
+}
+
+/* ------------product css ----------------------- */
+
+
+/* From Uiverse.io by alexruix */ 
+.Customcard {
+  width: 90%;
+  height: 100%;
+  padding: .8em;
+  background: #faf6e7;
+  /* background: radial-gradient(circle,  #faf6e7, #FFDE32); */
+  /* background: linear-gradient(65deg, #ffffff, #FF8C00) !important; */
+  background: linear-gradient(185deg,   #f89f31 10% ,#FFDE32  );
+  /* position: relative;
+  overflow: visible; */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Increased opacity & spread */
+  border-radius: 13px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.175, 0.95, 0.9, 1.275); /* Move transition here */
+ }
+
+ .Customcard:hover {
+  border-radius: 13px;
+  border: 0.5px solid #000;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+}
+ 
+ .Customcard-img {
+ 
+  height: 40%;
+  width: 100%;
+  border-radius: .5rem;
+  transition: .3s ease;
+ }
+ 
+ .Customcard-info {
+  padding-top: 10%;
+ }
+ 
+ .Customsvg {
+  width: 35px;
+  height: 25px;
+ }
+ 
+ .Customcard-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  /* border-top: 1px solid #ffffff; */
+ }
+ 
+ /*Text*/
+ .Customtext-title {
+  font-weight: 900;
+  font-size: 1.2em;
+  
+ }
+ 
+ .Customtext-body {
+  font-size: .9em;
+ }
+ 
+ /*Button*/
+ .Customcard-button {
+  border: 1px solid #252525;
+  display: flex;
+  padding: .3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: .3s ease-in-out;
+ }
+ 
+ /*Hover*/
+ .Customcard-img:hover {
+  transform: translateY(-10%);
+
+ }
+ 
+ .Customcard-button:hover {
+  border: 1px solid #f9f5f5;
+  background: radial-gradient(circle,  #fffafa, #ffffff);
+ }
+ 
