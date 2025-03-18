@@ -18,9 +18,9 @@ const Header_ = () => {
     <>
 
       {/* Yellow Strip */}
-      <div className='container-fluid p-2 CustomColor' >
+      <div className='container-fluid  CustomColor' >
         <div className='row g-0'>
-          <div className="col-12 col-md-4 p-1 m-0 d-flex justify-content-lg-start justify-content-sm-center justify-content-center justify-content-md-start align-items-center">
+          <div className="col-12 col-md-4 p-1 m-0 d-md-flex d-sm-none d-none justify-content-lg-start justify-content-sm-center justify-content-center justify-content-md-start align-items-center">
             <img src={facebookLogo} alt='Facebook' className='socialLogo' style={{ width: '25px', margin: '0 10px' }} />
             <img src={instagramLogo} alt='Instagram' className='socialLogo' style={{ width: '25px', margin: '0 10px' }} />
             <img src={whatsappLogo} alt='WhatsApp' className='socialLogo' style={{ width: '25px', margin: '0 10px' }} />
@@ -42,7 +42,7 @@ const Header_ = () => {
 
           <div className="col-12 col-md-4 p-1 d-flex justify-content-lg-end justify-content-sm-center justify-content-center justify-content-md-end align-items-center">
             <Link to="https://web.whatsapp.com/?post_logout=1" className='text-decoration-none d-flex align-items-center '>
-            <img src={whatsapplogo} alt='phone' className='socialLogo' style={{ width: '35px', margin: '0 5px' }} />
+            <img src={whatsapplogo} alt='phone' className='socialLogo' style={{ width: '30px',height:"auto" }} />
               <h4 className='text-dark m-0 callHeading  text-nowrap'>
                 +923097223857
               </h4>
