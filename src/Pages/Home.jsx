@@ -9,7 +9,11 @@ const Home = () => {
       <Carousal___ />
       <AnnouncementBar />
       <ProductCategory />
-      <Products />
+      {/* <Products /> */}
+      <Products category="Solar" />
+      <Products category="Inverter" />
+      <Products category="Battery" />
+      <Products category="Accessory" />
     </div>
   )
 }

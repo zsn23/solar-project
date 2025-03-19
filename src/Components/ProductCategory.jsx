@@ -72,7 +72,7 @@ const ProductCategory = () => {
     return (
         <div className="container-fluid border-top  mb-5">
             <div className="row g-0 align-items-center justify-content-center p-2 m-3">
-                <div className="col-12 text-center m-2">
+                <div className="col-12 text-center mb-3">
                     <h1 className=" display-3 fw-lighter" >
                         PRODUCT CATEGORIES
                     </h1>
@@ -80,7 +80,7 @@ const ProductCategory = () => {
             </div>
 
             {/* Row for Product Categories */}
-            <div className="row g-4 justify-content-center p-4 align-items-center">
+            <div className="row g-4 justify-content-center p-4 align-items-center  border-bottom">
                 {categories.map((category, index) => (
                     <div key={index} className="col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center">
                         <div className="CustomcardCategory ">
@@ -92,6 +92,15 @@ const ProductCategory = () => {
                     </div>
                 ))}
             </div>
+
+             {/* FEATURED PRODUCT Heading */}
+      <div className="row g-0 ">
+        <div className="col-12 text-center mt-5">
+          <h1 className="display-4 fw-lighter m-0 ">FEATURED PRODUCT</h1>
+        </div>
+      </div>
+    
+      {/* FEATURED PRODUCT Heading */}
         </div>
     );
 };
