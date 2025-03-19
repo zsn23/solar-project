@@ -290,7 +290,7 @@ const SolarProductDetails = () => {
                             key={Solarproducts.id}
                             className="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 p-0 d-flex justify-content-center align-items-center"
                         >
-                            <Link to={`/product/${Solarproducts.id}`} className="Customcard d-flex flex-column text-decoration-none text-dark">
+                            <Link to={`/solar-product/${Solarproducts.id}`} className="Customcard d-flex flex-column text-decoration-none text-dark">
                                 {/*Solarproducts img  */}
                                 <div className="Customcard-img d-flex justify-content-center">
                                     {/* Product Image */}

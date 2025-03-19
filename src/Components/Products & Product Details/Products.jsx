@@ -7,7 +7,7 @@ import p1 from "../../assets/p1.png";
 const Solarproducts = [
   {
     id: 1,
-    title: "Haier T-Door HRF-678TGG Side By Side Refrigerator",
+    title: "Solar Product 1",
     price: "Rs355,000",
     image: p1,
     descrition: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -15,7 +15,7 @@ const Solarproducts = [
   },
   {
     id: 2,
-    title: "PEL Life Pro Refrigerator PRLP 6360",
+    title: "Solar Product 2",
     price: "Rs129,999",
     image: p1,
     descrition: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -23,7 +23,7 @@ const Solarproducts = [
   },
   {
     id: 3,
-    title: "PEL Ultra InverterOn Glass Door Refrigerator PRUINVO 22260",
+    title: "Solar Product 3",
     price: "Rs126,999",
     originalPrice: "Rs145,000",
     image: p1,
@@ -32,7 +32,7 @@ const Solarproducts = [
   },
   {
     id: 4,
-    title: "PEL PRLP 2550 Life Pro Refrigerator 9 cuft",
+    title: "Solar Product 4",
     price: "Rs71,000",
     originalPrice: "Rs79,000",
     image: p1,
@@ -44,7 +44,7 @@ const Solarproducts = [
 const Invertorproducts = [
   {
     id: 1,
-    title: "Haier T-Door HRF-678TGG Side By Side Refrigerator",
+    title: "Solar inverter 1",
     price: "Rs355,000",
     image: p1,
     descrition:
@@ -52,7 +52,7 @@ const Invertorproducts = [
   },
   {
     id: 2,
-    title: "PEL Life Pro Refrigerator PRLP 6360",
+    title: "Solar inverter 2",
     price: "Rs129,999",
     image: p1,
     descrition:
@@ -60,7 +60,7 @@ const Invertorproducts = [
   },
   {
     id: 3,
-    title: "PEL Ultra InverterOn Glass Door Refrigerator PRUINVO 22260",
+    title: "Solar inverter 3",
     price: "Rs126,999",
     originalPrice: "Rs145,000",
     image: p1,
@@ -69,7 +69,7 @@ const Invertorproducts = [
   },
   {
     id: 4,
-    title: "PEL PRLP 2550 Life Pro Refrigerator 9 cuft",
+    title: "Solar inverter 4",
     price: "Rs71,000",
     originalPrice: "Rs79,000",
     image: p1,
@@ -81,7 +81,7 @@ const Invertorproducts = [
 const Batteriesproducts = [
   {
     id: 1,
-    title: "Haier T-Door HRF-678TGG Side By Side Refrigerator",
+    title: "Battery 1",
     price: "Rs355,000",
     image: p1,
     descrition:
@@ -89,7 +89,7 @@ const Batteriesproducts = [
   },
   {
     id: 2,
-    title: "PEL Life Pro Refrigerator PRLP 6360",
+    title: "Battery 2",
     price: "Rs129,999",
     image: p1,
     descrition:
@@ -97,7 +97,7 @@ const Batteriesproducts = [
   },
   {
     id: 3,
-    title: "PEL Ultra InverterOn Glass Door Refrigerator PRUINVO 22260",
+    title: "Battery 3",
     price: "Rs126,999",
     originalPrice: "Rs145,000",
     image: p1,
@@ -106,7 +106,7 @@ const Batteriesproducts = [
   },
   {
     id: 4,
-    title: "PEL PRLP 2550 Life Pro Refrigerator 9 cuft",
+    title: "Battery 4",
     price: "Rs71,000",
     originalPrice: "Rs79,000",
     image: p1,
@@ -118,7 +118,7 @@ const Batteriesproducts = [
 const productsAccesories = [
   {
     id: 1,
-    title: "Haier T-Door HRF-678TGG Side By Side Refrigerator",
+    title: "Accesory 1",
     price: "Rs355,000",
     image: p1,
     descrition:
@@ -126,7 +126,7 @@ const productsAccesories = [
   },
   {
     id: 2,
-    title: "PEL Life Pro Refrigerator PRLP 6360",
+    title: "Accesory 2",
     price: "Rs129,999",
     image: p1,
     descrition:
@@ -134,7 +134,7 @@ const productsAccesories = [
   },
   {
     id: 3,
-    title: "PEL Ultra InverterOn Glass Door Refrigerator PRUINVO 22260",
+    title: "Accesory 2",
     price: "Rs126,999",
     originalPrice: "Rs145,000",
     image: p1,
@@ -143,7 +143,7 @@ const productsAccesories = [
   },
   {
     id: 4,
-    title: "PEL PRLP 2550 Life Pro Refrigerator 9 cuft",
+    title: "Accesory 4",
     price: "Rs71,000",
     originalPrice: "Rs79,000",
     image: p1,
@@ -163,10 +163,11 @@ const Products = () => {
       </div>
       {/* FEATURED PRODUCT Heading */}
 
+
       {/* Solar Panel PRODUCT Heading */}
       <div className="row g-0 ">
         <div className="col-12 text-md-start text-center p-3 ">
-          <h1 className="display-6 fw-semibold fs-2">Solar Panel</h1>
+          <h1 className=" fw-semibold fs-1">Solar Panel</h1>
         </div>
       </div>
       {/* Solar Panel PRODUCT Heading */}
@@ -177,7 +178,7 @@ const Products = () => {
             key={Solarproducts.id}
             className="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 p-0 d-flex justify-content-center align-items-center"
           >
-            <Link to={`/product/${Solarproducts.id}`} className="Customcard  d-flex flex-column text-decoration-none text-dark">
+            <Link to={`/solar-product/${Solarproducts.id}`} className="Customcard  d-flex flex-column text-decoration-none text-dark">
               {/*Solarproducts img  */}
               <div className="Customcard-img d-flex justify-content-center">
                 {/* Product Image */}
@@ -219,6 +220,7 @@ const Products = () => {
               </div>
             
             </Link>
+            
           </div>
         ))}
         <div className="d-flex justify-content-center align-items-center p-3 m-3 border-bottom">
@@ -235,7 +237,7 @@ const Products = () => {
       {/* Solar Invertor PRODUCT Heading */}
       <div className="row g-0 ">
         <div className="col-12 text-md-start text-center p-3">
-          <h1 className="display-6 fw-semibold fs-2">Solar Invertor</h1>
+          <h1 className=" fw-semibold fs-1">Solar Invertor</h1>
         </div>
       </div>
       {/* Solar Invertor PRODUCT Heading */}
@@ -246,7 +248,7 @@ const Products = () => {
             key={Invertorproducts.id}
             className="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 p-0 d-flex justify-content-center align-items-center"
           >
-            <div className="Customcard  d-flex flex-column">
+            <Link to={`/inverterProduct/${Invertorproducts.id}`} className="Customcard  d-flex flex-column text-decoration-none text-dark">
               {/*Invertorproducts img  */}
               <div className="Customcard-img d-flex justify-content-center">
                 {/* Invertorproducts Image */}
@@ -281,7 +283,8 @@ const Products = () => {
                 </div>
                 {/* Invertorproducts Price  & Cart icon */}
               </div>
-            </div>
+              </Link>
+          
           </div>
         ))}
         <div className="d-flex justify-content-center align-items-center p-3 m-3 border-bottom">
@@ -294,12 +297,13 @@ const Products = () => {
       </div>
       {/*Invertorproducts  Cards */}
 
+
       {/* Batteriesproducts Cards */}
       <div className="container-fluid">
         {/* Solar Batteries PRODUCT Heading */}
         <div className="row g-0 ">
           <div className="col-12 text-md-start text-center p-3 ">
-            <h1 className="display-6 fw-semibold fs-2">Batteries</h1>
+            <h1 className=" fw-semibold fs-1">Batteries</h1>
           </div>
         </div>
         {/* Solar Batteries PRODUCT Heading */}
@@ -310,7 +314,8 @@ const Products = () => {
               className="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 p-0 d-flex justify-content-center align-items-center"
 
             >
-              <div className="Customcard  d-flex flex-column">
+              {/* <div className="Customcard  d-flex flex-column"> */}
+              <Link to={`/batteryProduct/${Batteriesproducts.id}`} className="Customcard  d-flex flex-column text-decoration-none text-dark">
                 {/*Batteriesproducts img  */}
                 <div className="Customcard-img d-flex justify-content-center">
                   {/* Batteriesproducts Image */}
@@ -345,7 +350,13 @@ const Products = () => {
                   </div>
                   {/* Batteriesproducts Price  & Cart icon */}
                 </div>
-              </div>
+
+                </Link>
+              
+              {/* </div> */}
+
+
+
             </div>
           ))}
           <div className="d-flex justify-content-center align-items-center p-3 m-3 border-bottom">
@@ -360,10 +371,14 @@ const Products = () => {
       </div>
       {/*Batteriesproducts  Cards */}
 
+
+
+
+
       {/* Solar Accesories PRODUCT Heading */}
       <div className="row g-0 ">
         <div className="col-12 text-md-start text-center p-3 ">
-          <h1 className="display-6 fw-semibold fs-2">Accesories</h1>
+          <h1 className=" fw-semibold fs-1">Accesories</h1>
         </div>
       </div>
       {/* Solar Accesories PRODUCT Heading */}
@@ -374,7 +389,7 @@ const Products = () => {
             key={productsAccesories.id}
             className="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 p-0 d-flex justify-content-center align-items-center"
           >
-            <div className="Customcard  d-flex flex-column">
+              <Link to={`/AccesoryProduct/${productsAccesories.id}`} className="Customcard  d-flex flex-column text-decoration-none text-dark">
               {/*productsAccesories img  */}
               <div className="Customcard-img d-flex justify-content-center">
                 {/* productsAccesories Image */}
@@ -409,7 +424,9 @@ const Products = () => {
                 </div>
                 {/* productsAccesories Price  & Cart icon */}
               </div>
-            </div>
+           
+            </Link>
+
           </div>
         ))}
         <div className="d-flex justify-content-center align-items-center m-3">
