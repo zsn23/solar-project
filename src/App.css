@@ -191,8 +191,7 @@
 }
 
 .custom-close-btn {
-  border: none;
-  /* Remove default border */
+  
   padding: 0.5rem;
   outline: none !important;
   /* Remove focus outline */
@@ -201,6 +200,21 @@
   border: none !important;
   /* Remove border */
 }
+.offcanvas-header .btn-close{
+  padding: 0.5rem;
+  outline: none !important;
+  /* Remove focus outline */
+  box-shadow: none !important;
+  /* Remove focus box shadow */
+  border: none !important;
+  /* Remove border */
+}
+.dropdown-toggle::after {
+  margin-left: 0px !important;
+  vertical-align: 0em !important;
+  border:  none !important;
+}
+
 
 .custom-toggler .navbar-toggler-icon {
   background-image: none;

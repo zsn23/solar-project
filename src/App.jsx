@@ -33,6 +33,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/about" element={<AboutUS />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/products/solar_panels" element={<ContactUs />} />
         {/* <Route path="/solar-product/:id" element={<SolarProductDetails />} />    
         <Route path="/inverterProduct/:id" element={<InverterProductDetail />} />
         <Route path="/batteryProduct/:id" element={<BatteryProductDetail />} />
