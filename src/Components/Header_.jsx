@@ -561,14 +561,14 @@ const Header_ = () => {
                   to="/" 
                   style={{width:"fit-content"}} 
                   onClick={handleClose} 
-                  className={location.pathname === "/" ? "active" : ""}
+                  className={location.pathname === "/" ? "active  custom_navlink" : "custom_navlink"}
                 >
                   Home
                 </Nav.Link>
                 
                 {/* Products Dropdown (Click on mobile) */}
                 <Dropdown>
-                  <Dropdown.Toggle as={Nav.Link} style={{width:"fit-content", borderBottom:"none"}}>
+                  <Dropdown.Toggle as={Nav.Link} style={{width:"fit-content",padding:"0%",margin:"1%"}}>
                     Products <i className="bi bi-caret-up-fill caret"></i>
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
@@ -581,7 +581,7 @@ const Header_ = () => {
 
                 {/* Services Dropdown (Click on mobile) */}
                 <Dropdown>
-                  <Dropdown.Toggle as={Nav.Link} style={{width:"fit-content"}}>
+                  <Dropdown.Toggle as={Nav.Link} style={{width:"fit-content", padding:"0%",margin:"1%"}}>
                     Services <i className="bi bi-caret-up-fill caret"></i>
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
@@ -596,7 +596,7 @@ const Header_ = () => {
                   to="/about" 
                   style={{width:"fit-content"}} 
                   onClick={handleClose}
-                  className={location.pathname === "/about" ? "active" : ""}
+                  className={location.pathname === "/about" ? "active custom_navlink" : "custom_navlink"}
                 >
                   About Us
                 </Nav.Link>
@@ -605,7 +605,7 @@ const Header_ = () => {
                   to="/contact" 
                   style={{width:"fit-content"}} 
                   onClick={handleClose}
-                  className={location.pathname === "/contact" ? "active" : ""}
+                  className={location.pathname === "/contact" ? "active custom_navlink" : "custom_navlink"}
                 >
                   Contact Us
                 </Nav.Link>

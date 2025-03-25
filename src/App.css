@@ -39,7 +39,12 @@
   position: relative;
   transition: color 0.3s ease-in-out !important;
   display: inline-block;
+ margin-right: 0% !important;
   /* Add this to constrain the width to the text */
+}
+.custom_navlink{
+  padding: 0% !important;
+  margin: 1% !important;
 }
 
 /* Underline effect for both active and hover */
